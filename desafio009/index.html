@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Videos</title>
+    <style>
+        h1{
+            text-align: center;
+            color: aliceblue;
+            font-style: oblique;
+        }
+        body{
+            background-color: black;
+        }
+        .grid-videos-container{
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* Permite que os vídeos se ajustem automaticamente */
+            gap: 20px; /* Espaço entre os vídeos */
+            justify-content: space-evenly; /* Centraliza os itens horizontalmente */
+            align-items: normal; /* Centraliza os itens verticalmente */
+            text-align: center; /* Centraliza o conteúdo dentro de cada item */
+        }
+        .grid-videos-layout{
+            width: calc(50% - 100px); /* 50% de largura menos metade do espaço do gap */
+            box-sizing: border-box; /* Inclui o padding e a borda no cálculo do tamanho */
+        }
+    </style>
+</head>
+<body>
+    <h1>My favorite songs</h1>
+<div class="grid-videos-container"> 
+        <div class="grid-videos-layout"> 
+            <a href="pag/page1.html" target="_self" rel="next">
+            <img src="imagens/thumb-hardware.png" alt="hardware Thumbnail"></a> 
+        </div>
+        
+        <div class="grid-videos-layout">
+            <a href="pag/page2.html" target="_self" rel="next">
+                <img src="imagens/thumb-html.png" alt="HTML Thumbnail">
+            </a>
+        </div>
+        
+        <div class="grid-videos-layout">
+            <a href="pag/page3.html" target="_self" rel="next">
+                <img src="imagens/thumb-js.png" alt="JS Thumbnail">
+            </a>
+        </div>
+        
+        <div class="grid-videos-layout">
+            <a href="pag/page4.html" target="_self" rel="next">
+                <img src="imagens/thumb-python.png" alt="Python Thumbnail">
+            </a>
+        </div>   
+</div>
+</body>
+</html>

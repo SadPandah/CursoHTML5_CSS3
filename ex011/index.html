@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinânmica</h1>
+    <p> Tente abrir esse site em vários dispositivos differentes
+        ou simplemente aumente e diminua o tamanho do seu nevagdor
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- LEMBRANDO QUE TEM ORDEM SEMPRE DO MENOR PARA O MAIOR de cima para baixo sendo que a maior 
+        imagem tem que ser na tag <img src="">-->
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p> Vamos aprender a reproduzir audiso em HTML5</p>
+    <audio preload="metadata" autoplay controls loop> <!--Se colocar controls mostra os controles de audio padrao que vc ve everywhere autoplay para tocar automaticamente, QUISER QUE TOCA AUTOMATICA
+        colocar "autoplay" antes de control-->
+        <source src="midia/Sin Rumbo - Inaban.mp3" type="audio/mpeg">
+        <source src="midia/Sin Rumbo - Inaban.ogg" type="audio/ogg">
+        <source src="midia/Sin Rumbo - Inaban.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio
+        <a href="midia/Sin Rumbo - Inaban.mp3">Clique aqui para baixar o Arquivo MP3</a></p>
+    </audio> <!--Essa forma de fazer a tag <audio> e a melhor para ser compativel com varios so precisar trocar a tag no final no type e no final do arquivo(estou falando na tag source)-->
+
+    
+</body>
+</html>

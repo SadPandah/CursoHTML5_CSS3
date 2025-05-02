@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1{ /* box-level, se quiser transforma de box-level para inline so fazer display:inline; */
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            
+            padding: 10px; /* se eu botar "padding 10px" ele ira colocar em todos os lados, top, right, bottom, left em 10px  // se eu colocar 10 px e 20px ele vai botar 10 em cima e baixo e outro no left and right lembrando que vc pode tbm fazer individual mas melhor fazer pelo shorthand*/
+
+
+            margin: 20px auto 40px auto; /* o auto e para centralizar esquerda e direita para ficar centralizada, lembrando que para simplificar vc pode fazer tbm os 4 numeros para cada direcao clockwise  ISSO SE CHAMA SHORTHAND */
+        }
+
+        a{ /* Inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: gainsboro;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Exemplo de caixa box-level</h1>
+    <p> paragrafos tambem sao exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

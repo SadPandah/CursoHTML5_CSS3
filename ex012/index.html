@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+
+    <style>
+        body{
+            background-color: rgb(133, 41, 41);
+        }
+        
+        h1{
+            color: rgb(248, 33, 248);
+            text-align: center;
+        }
+
+        p{
+            color:rgb(250, 250, 250);
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: auto;
+        }
+
+        .video-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inserindo videos no meu website!</h1>
+    <p> Este video esta hospedado no meu proprio website</p>
+    <div class="video-container">
+
+        
+        <video width="500" poster="imagens/limoes-capa.png" controls> <!--posso usar autoplay aqui para dar AUTOPLAY e ate adicionar loop!! -->
+        
+            <source src="midia/meu-video.mp4" type="video/mp4"> <!--lembrando que a ordem sempre vai de cima para baixo se nenhum for compativel vc ira receber aquela msg embaixo-->
+            <source src="midia/meu-video.ogv" type="video/ogv">
+            <source src="midia/meu-video.webm" type="video/webm">
+            <p> seu Nevagador nao tem compatibilidade com reproducao de video</p>
+            <!--Lembrando que esse tipo de videos direto no website fica caro para consumo para o client-->
+        </video>
+    </div>
+
+
+
+    <h1>You didn't need to post that </h1>
+       <div class="video-container">
+         <iframe width="650" height="350" src="https://www.youtube.com/embed/o048xeNQ3Wo?si=eoyFScw70NCzEoJ-" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>
