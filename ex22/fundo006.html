@@ -6,21 +6,32 @@
     <title>Fundos Evitando Quebras da imagem no background image</title>
     <style>
         body{
+            
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url(imagens/entre-em-contato-com-a-natureza-atraves-de-imagens-1101297.jpg);
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover; /* Sempre usar esse aqui para poder cobrir a dela, para fazer a imagem ficar na pagina inteira indepdendente do tamanho, SO UM PROBLEMA se o conteudo for grande a image quebra*/
+            background-size: cover;  Sempre usar esse aqui para poder cobrir a dela, para fazer a imagem ficar na pagina inteira indepdendente do tamanho, SO UM PROBLEMA se o conteudo for grande a imagem quebra , olha o que se usa abaixo para arrumar esse problema. 
+            background-attachment: fixed;  */
+
+            /* Shorthand - background 
+
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/entre-em-contato-com-a-natureza-atraves-de-imagens-1101297.jpg') center top no-repeat fixed; /* esse e o shorthand ao inves de fazer tudo que esta em cima! ele se n funciona o cover [size] ele n ta funcionado em 2025 ainda */
+            background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 600px; /* ao inves de width usar max width ai toda vez que vc for espremer a tela ele vai diminuindo o background image mas vai matar o conteudo.*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+
         }
     </style>
 </head>
@@ -28,6 +39,27 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
+        </p>
+         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero a quia at eveniet iure dolores rem aliquid expedita, aut distinctio illum sequi sint asperiores fugiat consequatur itaque veritatis quas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis, suscipit ex distinctio a deserunt odit cum odio ipsa repellendus voluptas eius doloribus. Commodi praesentium labore placeat sunt culpa expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, adipisci. Sequi aspernatur distinctio aliquid praesentium voluptates? Magni consequatur, illum porro, voluptatibus quidem, saepe esse eius necessitatibus hic corrupti blanditiis at.
         </p>
     </main>
