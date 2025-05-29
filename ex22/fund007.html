@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative; /* ele ja tem a posicao como relativo , so aplicando como efeito para entender ambos */
+            height: 90vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: aliceblue;
+            text-align: center;
+            /* margin: auto; margin so da para fazer alinhamento horizontal */
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%) /* THIS IS SO COMPLICATED DAWG JUST WATCH THE video 18/40 playlist video number of Gustavo Guanabara CursoEmVideo, Centralizacao Vertical de caixas!*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos ab atque enim tempore consequuntur sunt quae, iusto ratione voluptate deleniti rerum. Accusamus eius pariatur cupiditate asperiores a atque saepe?</p>
+
+        </article>
+    </section>
+    
+</body>
+</html>
