@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: "Passion One", cursive;
+    --fonte03:  "Sriracha", cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,8 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
+    font-weight: 400;
 }
 
 header{
@@ -19,31 +31,24 @@ header{
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte02); 
+    font-size: 4.5vw;
 }
 
 header > p {
     padding-bottom: 50px;
 }
 
-header a, footer a {
-    color: rgb(231, 152, 152);
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-header a:hover, footer a:hover{
-    text-decoration: underline;
-    color: yellowgreen;
-}
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.5w;
+    
 }
-
-
 
 section.normal {
     background-color: white;
@@ -56,9 +61,22 @@ section.imagem{
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.692);
 }
+
+
+header a, footer a {
+    color: rgb(231, 152, 152);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
 
 footer {
     background-color: black;
