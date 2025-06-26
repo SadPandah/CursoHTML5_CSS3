@@ -13,14 +13,21 @@
             width: 500px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+
         td, th {
             border: 1px solid rgb(15, 15, 15);
             padding: 8px;
         }
 
         thead, tfoot/* lembrando que assim essas configurações abaixo funciona para ambos quando vc bota virgula assim*/{ 
-            background-color: gray;
-            color: white;
+            background-color: aliceblue;
+            color: black;
         }
 
         td.num{
@@ -37,6 +44,7 @@
     <!--
         Anatomia para tabelas Grandes 
         Table 
+            CAPTION
             THEAD
                 TR, TD, TH 
             TBODY 
@@ -46,10 +54,11 @@
     -->
 
     <table>
+        <caption>População Das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
 
             </tr>
         </thead>
@@ -165,8 +174,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th class="num">Total de Habitantes</th> <!--Lembrando que TH sigifnica titulo e TD significa dado-->
-                <td><strong>210.147.125</strong></td>
+                <th scope="row">Total de Habitantes</th> <!--Lembrando que TH sigifnica titulo e TD significa dado-->
+                <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
