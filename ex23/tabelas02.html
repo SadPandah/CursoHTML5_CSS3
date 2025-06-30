@@ -11,6 +11,8 @@
         }
         table {
             width: 500px;
+            border-collapse: collapse; /* Quando você cria tabelas ela vai ter um espacinho entre as linhas, se vc remover border-collapse vc vai entender, então utilize de border collapse para sempre manter as linhas "coladas" */
+            position: relative;
         }
 
         caption{
@@ -25,9 +27,18 @@
             padding: 8px;
         }
 
-        thead, tfoot/* lembrando que assim essas configurações abaixo funciona para ambos quando vc bota virgula assim*/{ 
+        thead, tfoot/* <--- lembrando que assim essas configurações abaixo funciona para ambos quando vc bota virgula desta maneira*/{ 
             background-color: aliceblue;
             color: black;
+        }
+
+        tbody >tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: lightgray
+            
         }
 
         td.num{
@@ -59,7 +70,6 @@
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
-
             </tr>
         </thead>
         <tbody>
