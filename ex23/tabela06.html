@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em Telas pequenas</title>
+        <style>
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        div#container { /* Isso serve para a tabela ficar com um scroll ao inves do site inteiro!!*/ 
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quae optio vel ut error sint quas exercitationem enim, vero qui aperiam debitis cupiditate possimus maiores in molestiae sapiente consectetur amet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, nobis quae! Sapiente obcaecati quisquam, ullam impedit fugit ab dignissimos at debitis officia! Impedit doloribus animi architecto porro corporis, numquam quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quia asperiores, sint debitis ipsam vitae aperiam neque repellendus adipisci voluptas iure officiis hic aliquam vero quod optio nesciunt totam pariatur.</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th>
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>TV 40'</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+                <tr>
+                    <th>Home Theater</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+                <tr>
+                    <th>Samsung Galaxy S20</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+                <tr>
+                    <th>iPad Mini</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+                <tr>
+                    <th>Playstation 5</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+                <tr>
+                    <th>Lava Louças</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+                <tr>
+                    <th>Amazon Echo Gen 4</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>07</th>
+                    <th>12</th>
+                    <th>12</th>
+                    <th>10</th>
+                    <th>05</th>
+                    <th>02</th>
+                    <th>01</th>
+                    <th>01</th>
+                    <th>04</th>
+                    <th>16</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
